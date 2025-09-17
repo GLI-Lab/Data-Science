@@ -1,3 +1,9 @@
+## How to use
+
+```
+!rm -rf data_science
+!git clone https://github.com/GLI-Lab/data-science.git data_science
+```
 
 ## Data
 
