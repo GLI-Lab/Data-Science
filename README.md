@@ -7,7 +7,17 @@
 
 ## Data
 
-### Kaggle Datasets
+### Overview
+
+| Dataset | Type | Primary Task | Target Variable |
+|---|---|---|---|
+| `Amtrak.csv` | Time series | Regression | `Ridership` |
+| `BostonHousing.csv` | Tabular | Regression | `MEDV` |
+| `california_housing.csv` | Tabular | Regression | `median_house_value` |
+| `titanic.csv` | Tabular | Classification | `Survived` |
+| `california_cities.csv` | Tabular | Regression | `population` |
+
+### Source & Loader
 
 https://www.kaggle.com/datasets?sort=votes
 
