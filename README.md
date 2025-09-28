@@ -25,11 +25,20 @@ https://www.kaggle.com/datasets?sort=votes
 # titanic
 import seaborn as sns
 titanic = sns.load_dataset("titanic")
-titanic.to_csv("data_science/data/titanic.csv", index=False)
+titanic.to_csv("./data/titanic.csv", index=False)
 
 # California Housing Prices
 https://www.kaggle.com/datasets/camnugent/california-housing-prices
 
 # Credit Card Fraud Detection
 https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+# MUTAG
+import torch_geometric.transforms as T
+from torch_geometric.datasets import TUDataset
+dataset = TUDataset(
+    root='./data', name='MUTAG', use_node_attr=False, cleaned=True, transform=T.Compose([
+        T.LocalDegreeProfile(),
+    ])
+)
 ```
